@@ -1,0 +1,29 @@
+.featured {
+    position: absolute;
+    right: 0;
+    top: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    z-index: 1;
+    background-color: #ff3d77;
+}
+.featured:before {
+    border-color: transparent;
+    border-left-color: transparent!important;
+    left: -12px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0px solid #ff3d77;
+    border-width: 14px 11px;
+}
+.image {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}

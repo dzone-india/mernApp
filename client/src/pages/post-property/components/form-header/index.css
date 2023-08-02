@@ -1,0 +1,11 @@
+.form-header h1{
+    color: gray;
+    display: inline;
+}
+
+.form-header span{
+    color: rgb(146, 123, 123)
+}
+.title-heading{
+    font-weight: normal;
+}

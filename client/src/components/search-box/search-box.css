@@ -1,0 +1,193 @@
+.search-section {
+	position: relative;	   
+    margin-bottom: 60px;
+}
+.search-container{
+    max-width: 1280px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+}
+.search-wrapper {		
+	background-color: #f5f5f5;  
+	border-radius: 20px;
+	padding: 30px;	
+}
+.search-form {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 32px;
+	box-shadow: 0 3px 12px -9px rgb(0 0 0 / 40%);
+	border: 1px solid #909090;
+	background-color: #fff;
+	background-color: aliceblue !important;
+	padding: 2px 10px 2px 10px;
+}
+.search-form-area {
+	display: flex;
+	align-items: center;	
+}
+.search-form-area .MuiGrid-item {	
+	position: relative;
+}
+.search-form-wrap {
+	position: relative;
+    padding-left: 7px;
+}
+.search-form-area .search-form-group {
+	width: 100%;
+    position: relative;
+}
+.form-icon-wrap {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	height: 100%;
+	margin: 0;
+	font-size: 13px;
+	color: #ff7600;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+}
+.search-form-group label {
+	font-size: 14px;
+	transform: translate(12px, 18px) scale(1);
+}
+.search-form-area .search-form-divider {
+	position: absolute;
+	top: 25%;
+	right: 8px;
+	z-index: 10;
+	height: calc(100% - 50%);
+}
+#search-box #type{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#search-box #type div{
+    padding: 7px 18px;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+#search-box #type div:hover,#search-box #type div.selected{
+    background: #ff7600;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0.95, 0.05, 0.795, 0.035)
+}
+.MuiFilledInput-underline:after,.MuiFilledInput-underline:before{
+    border-bottom:none!important
+}
+.mb-search__btn {	
+	width: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	border-radius: 50px;
+	background-color: #ff7600;
+	margin: 0;
+	cursor: pointer;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 46px;
+	color: #fff;
+	border: none;
+	text-decoration: none;
+	min-width: 150px;
+	display: block;
+}
+.search-form-area .MuiTypography-colorTextSecondary{
+    color:#ff7600!important;
+    font-weight: bold!important;
+}
+.search-form-area .MuiFilledInput-root{
+    background-color: unset!important;
+}
+@media only screen and (max-width: 991px) {
+    .search-wrapper {       
+        padding: 20px;
+    }
+    .search-form {       
+        padding: 10px 10px;
+    }
+    .search-form-area {
+        flex-wrap: wrap;
+    }
+    .search-form-button {
+        margin-top: 20px;
+    }
+    .search-form-area .search-form-divider{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .search-section {  
+        margin-bottom: 30px;
+    }
+    .search-container {        
+        padding-left: 16px;
+        padding-right: 16px;       
+    }
+    .search-wrapper {       
+        border-radius: 10px;
+        padding: 10px;
+    }
+    #search-box #type {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .search-form {
+        border-radius: 10px;
+    }
+    .search-form-group .form-icon-wrap {
+        font-size: 12px;
+    }
+    .search-form .MuiInputLabel-filled.MuiInputLabel-shrink {
+        transform: translate(12px, 10px) scale(0.70);
+        white-space: nowrap;
+    }
+    .search-form .MuiFilledInput-adornedStart {
+        padding-left: 0;
+        font-size: 12px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .search-form .MuiSelect-filled.MuiSelect-filled {
+        padding-right: 20px;
+    }
+    .search-form .MuiSelect-iconFilled {
+        right: 0;
+    }
+    .mb-search__btn {
+        font-size: 14px;
+        padding: 9px 10px;
+        line-height: 20px;
+    }
+}
+
+#city-search{
+z-index: 9999!important;
+}
+
+#city-search div[role="presentation"]{
+    display: block!important;
+    z-index: 9999;
+}
+.css-d9oaum-MuiSelect-select-MuiInputBase-input-MuiFilledInput-input.css-d9oaum-MuiSelect-select-MuiInputBase-input-MuiFilledInput-input.css-d9oaum-MuiSelect-select-MuiInputBase-input-MuiFilledInput-input{
+    margin-top: 10px;
+}
+.MuiFilledInput-root .MuiFilledInput-input{
+    margin-top: 10px;
+}

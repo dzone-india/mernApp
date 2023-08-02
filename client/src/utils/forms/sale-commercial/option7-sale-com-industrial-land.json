@@ -1,0 +1,144 @@
+{
+    "property_for_id": 1,
+    "property_category": "Sell",
+    "selected_property_type_id": 7,
+    "sections": [
+        {
+            "section": "Property Features",
+            "section_id": "features",
+            "fields": [
+                {
+                    "type": "dropdown",
+                    "label": "Floors Allowed for construction",
+                    "values": [1,2,3,4,5,6,7,8,9,10,11,12,13,14, 15, 16, 17, 18, 19, 20,"Total Floors"],
+                    "fieldName": "floors_allowed_for_construction"
+                },
+                {
+                    "type": "dropdown",
+                    "label": "No of open sides",
+                    "values": [1,2,3,4],
+                    "fieldName": "no_of_open_sides"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Width of road facing the plot",
+                    "placeholder": "Road with",
+                    "unit": "meters",
+                    "fieldName": "width_of_road_facing_the_plot"
+                },
+                {
+                    "type": "radio",
+                    "label": "Any Construction done",
+                    "values": [{"label": "Yes", "value": "yes"}, {"label": "No", "value": "no"}],
+                    "fieldName": "any_construction_done"
+                },
+                {
+                    "type": "radio",
+                    "label": "Boundry wall made",
+                    "values": [{"label": "Yes", "value": "yes"}, {"label": "No", "value": "no"}],
+                    "fieldName": "boundry_wall_made"
+                }
+            ]
+        },
+        {
+            "section": "Area",
+            "section_id": "area",
+            "fields": [
+                {
+                    "type": "textfield",
+                    "label": "Plot Area",
+                    "placeholder": "Plot Area",
+                    "defalut_unit": "Sq-ft",
+                    "units": ["Sq-Yrd", "Sq-m", "Acre", "Bigha", "Hectare", "Marla", "Kanal", "Biswa1", "Biswa2", "Ground", "Aankadam", "Rood", "Chatak", "Kottah", "Cent"],
+                    "fieldName": "plot_area"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Plot Length",
+                    "placeholder": "Plot Length",
+                    "unit": "ft",
+                    "fieldName": "plot_area_length"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Plot Breadth",
+                    "placeholder": "Plot Breadth",
+                    "unit": "meter",
+                    "fieldName": "plot_area_breadth"
+                },
+                {
+                    "type": "checkbox",
+                    "label": "This is a corner plot",
+                    "fieldName": "this_is_a_corner_plot"
+                }
+              
+            ]
+        },
+        {
+            "section": "Transaction Type, Property Availability",
+            "section_id": "transaction",
+            "fields": [
+                {
+                    "label": "Transaction Type",
+                    "type": "radio",
+                    "values": ["New Property", "ReSell"],
+                    "fieldName": "transaction_type"
+                }
+                
+            ]
+        },
+        {
+            "section": "Price Details",
+            "section_id": "price",
+            "fields": [
+                {
+                    "type": "textfield",
+                    "data": [
+                        {
+                            "label": "Expected Price",
+                            "placeholder": "Enter Total Price",
+                            "fieldName": "expected_price"
+                        },
+                        {
+                            "placeholder": "",
+                            "label": "Price Per Sq-ft:",
+                            "fieldName": "expected_price_per_sq_ft"
+                        }
+                    ]
+                },
+                {
+                    "type": "textfield",
+                    "label": "Other Charges",
+                    "fieldName": "other_charges"
+                },
+                {
+                    "type": "checkbox",
+                    "label": "Stamp Duty & Registration Charges excluded.",
+                    "fieldName": "stamp_duty_registration_charges_excluded"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Booking/Token Amount",
+                    "fieldName": "booking_token_amount"
+                },
+                {
+                    "type": "dropdown",
+                    "label": "Brokerage (Brokers only)",
+                    "values": ["Select Brokerage", "No Brokerage", "0.25%", "0.5%", "0.75%", "1%", "1.5%", "2%", "3%", "4%", "5%"],
+                    "fieldName": "brokerage"
+                },
+                {
+                    "type": "checkbox",
+                    "label": "Response from brokers",
+                    "fields": [
+                        {
+                            "label": "I am not interested in getting response from brokers",
+                            "value": "I am not interested in getting response from brokers",
+                            "fieldName": "response_from_brokers"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

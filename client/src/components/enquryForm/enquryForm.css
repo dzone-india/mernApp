@@ -1,0 +1,60 @@
+.EnquryForm .enquryButton, .EnquryForm .enquryButton:hover{
+    position: fixed;
+    right: 0px;
+    background: #00afb8;
+    font-size: 24px;
+    color: #fff;
+    bottom: 170px;
+    z-index: 1;
+    min-width: auto;
+    padding: 7px 8px;
+    border: none;
+    z-index: 100;
+}
+.EnquryFormData .MuiDialog-container div:nth-child(1){
+    background: #00afb8;
+    color: #fff;
+}
+.EnquryFormData .divider{
+    border-color: #fff;
+}
+
+.EnquryFormData .ParentButton button{
+    background-color: #ef8822;
+    color: #fff;
+    margin: 0rem 1rem 2rem;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+.EnquryFormData .ParentButton button:hover{
+    background-color: #ef8822;
+    color: #fff;
+}  
+.EnquryFormData .EmiInputs{
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 2rem;
+}     
+#customized-dialog-title button{
+    top: 0px;
+    right: 0px;
+    border-radius: 0px;
+    background-color: #ef8822;
+    color: #fff;
+}
+
+.EnquryFormData .selectInput select{
+    margin-top: 1rem;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 4px;
+    color: #fff;
+}
+.EnquryFormData .selectInput select option{
+    color: #000;
+}
+.EnquryFormData .MuiInput-underline:before, .EnquryFormData .MuiInput-underline:hover, .EnquryFormData .MuiInput-underline:active{
+    content: '';
+    border-bottom:0px;
+    position: relative;
+}

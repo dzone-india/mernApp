@@ -1,0 +1,67 @@
+.JobForm .enquryButton, .JobForm .enquryButton:hover{
+    position: fixed;
+    right: 0px;
+    background: #00afb8;
+    color: #fff;
+    bottom: 170px;
+    z-index: 1;
+}
+.JobForm .ApplyJobbutton:hover{
+    background-color: #ef8822;
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 5px 20px;
+    text-align: right;
+}
+
+.Inputin{
+    padding: 15px 15px 0px 15px;
+
+}
+.JobFormData .divider{
+    border-color: #fff;
+}
+
+.JobFormData .JobButton button{
+    background-color: #00afb8;
+    color: #fff;
+    margin: 0rem 1rem 1rem;
+    border-radius: 4px;
+    padding: 8px 30px;
+}
+.JobFormData .JobButton button:hover{
+    background-color: #00afb8;
+    color: #fff;
+}  
+.JobFormData .jobInputs {
+    width: 100%;
+    margin-right: 2%;
+}
+
+#customized-dialog-title button{
+    top: 0px;
+    right: 0px;
+    border-radius: 0px;
+    background-color: #ef8822;
+    color: #fff;
+}
+.JobFormData .textArea{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 10px;
+}
+.JobFormData .JobButton button:disabled{
+    background-color: #aeb2b3;
+    color: rgb(17, 16, 16);
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 5px 20px;
+    text-align: right;
+}
+@media only screen and (min-width: 767px) {
+    .JobFormData .jobInputs{
+        width: 48%;
+        margin-right: 2%;
+    }     
+}

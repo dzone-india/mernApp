@@ -1,0 +1,59 @@
+.Emaicalculater{
+    background-color: #2b2b2b;
+    color: #fff;
+    position :fixed;
+    right: 0;
+    bottom: 100px;
+    transform: translateX(96%);
+    transition: all .8s ease 0s;
+    z-index: 999;
+    margin-right: -1.2%;
+    width: 400px;
+}
+.open{
+    transform: translateX(-4%);
+}
+@media(max-width:600px){
+    .Emaicalculater{
+        width:80%
+    }
+    
+}
+
+.CalculatorHeading{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.Emaicalculater .iconButton{
+    position: absolute;
+    top: 50%;
+    transform: translateX(-101%);
+    background-color: #ef8822;
+}
+.Emaicalculater .iconButton:hover{
+    background-color: #ef8822;
+}
+.emiForm{
+    padding: 20px;
+    justify-content: center;  
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.Emaicalculater .EmiInputs label{
+    color: #fff;
+}
+.Emaicalculater .EmiInputs input{
+    color: #fff;
+}
+.Emaicalculater .EmiInputs fieldset, .Emaicalculater .EmiInputs fieldset:hover, .MuiInputBase-root:hover{
+    border-color: #fff;
+}
+.emiForm .ParentButton button{
+    background-color: #ef8822;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 4px;
+    padding: 5px 20px;
+}

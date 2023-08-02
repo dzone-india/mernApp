@@ -1,0 +1,229 @@
+{
+    "property_for_id": 1,
+    "property_category": "Sell",
+    "selected_property_type_id": 2,
+    "sections": [
+        {
+            "section": "Property Features",
+            "section_id": "features",
+            "fields": [
+
+                {
+                    "type": "option",
+                    "label": "Visitor Room",
+                    "initial_counts": [1,2,3,4,5,"5+"],
+                    "more_counts": [6,7,8,9,10, ">10"],
+                    "showMore": true,
+                    "fieldName": "Visitor_Room"
+                },
+                {
+                    "type": "option",
+                    "label": "Conference Room",
+                    "initial_counts": [1,2,3,4,5,"5+"],
+                    "more_counts": [6,7,8,9,10, ">10"],
+                    "showMore": true,
+                    "fieldName": "Conference_Room"
+                },
+                {
+                    "type": "option",
+                    "label": "Meeting Rooms",
+                    "initial_counts": [1,2,3,4,5,"5+"],
+                    "more_counts": [6,7,8,9,10, ">10"],
+                    "showMore": true,
+                    "fieldName": "Meeting_Rooms"
+                },
+                {
+                    "type": "option",
+                    "label": "Balconies",
+                    "initial_counts": [-1,1,2,3,"3+"],
+                    "more_counts": [4,5,6,7,8,9,10, ">10"],
+                    "showMore": true,
+                    "fieldName": "Balconies"
+                },
+                {
+                    "type": "option",
+                    "label": "Floor No.",
+                    "initial_counts": [-2,-1,1,2,3,4,5,"5+"],
+                    "more_counts": [6,7,8,9,10, 11,12],
+                    "showMore": true,
+                    "fieldName": "Floor_No_"
+                },
+                {
+                    "type": "option",
+                    "label": "Total Floors",
+                    "initial_counts": [1,2,3,4,5,6,7,8,9,10,11,12,13,"13+"],
+                    "more_counts": [14,15,16,17,18,19,20],
+                    "showMore": true,
+                    "fieldName": "Total_Floors"
+                },
+                {
+                    "type": "option",
+                    "label": "Furnished Status",
+                    "initial_counts": ["Furnished", "Unfrnised", "Semi-Furnished"],
+                    "showMore": false,
+                    "fieldName": "Furnished_Status"
+                },
+                {
+                    "type": "option",
+                    "label": "Washroom",
+                    "initial_counts": [1,2,3,"3+"],
+                    "more_counts": [4,5,6,7,8,9,10, ">10"],
+                    "showMore": true,
+                    "fieldName": "Bathrooms"
+                },
+                {
+                    "type": "option",
+                    "label": "No Of Seats",
+                    "initial_counts": [2,4,5,6,7,8,9,10,15,20,25,"25+"],
+                    "more_counts": [30,35,40,50,60,70,80,100],
+                    "showMore": true,
+                    "fieldName": "No_Of_Seats"
+                },
+                {
+                    "type": "dropdown",
+                    "label": "Personal Washroom",
+                    "fieldName": "Personal_Washroom",
+                    "values": ["true","false"]
+                },
+                {
+                    "type": "dropdown",
+                    "label": "Pantry",
+                    "fieldName": "Pantry",
+                    "values": ["true","false"]
+                }
+            ]
+        },
+        {
+            "section": "Area",
+            "section_id": "area",
+            "fields": [
+                {
+                    "type": "textfield",
+                    "label": "Built-up Area",
+                    "placeholder": "Built-up Area",
+                    "defalut_unit": "Sq-ft",
+                    "units": ["Sq-Yrd", "Sq-m", "Acre", "Bigha", "Hectare", "Marla", "Kanal", "Biswa1", "Biswa2", "Ground", "Aankadam", "Rood", "Chatak", "Kottah", "Cent"],
+                    "fieldName": "Built_up_Area"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Carpet Area",
+                    "placeholder": "Carpet Area",
+                    "defalut_unit": "Sq-ft",
+                    "units": ["Sq-Yrd", "Sq-m", "Acre", "Bigha", "Hectare", "Marla", "Kanal", "Biswa1", "Biswa2", "Ground", "Aankadam", "Rood", "Chatak", "Kottah", "Cent"],
+                    "fieldName": "Carpet_Area"
+                }
+            ]
+        },
+        {
+            "section": "Transaction Type, Property Availability",
+            "section_id": "transaction",
+            "fields": [
+                {
+                    "label": "Property Tag",
+                    "type": "radio",
+                    "values": ["New", "Most Selling","Featured"],
+                    "fieldName": "Property_Tag"
+                },
+                {
+                    "label": "Transaction Type",
+                    "type": "radio",
+                    "values": ["New Property", "ReSell","Rent"],
+                    "fieldName": "Transaction_Type"
+                },
+                {
+                    "label": "Possession Status",
+                    "type": "radio",
+                    "values": ["Under Construction", "Ready to move"],
+                    "fieldName": "Possession_Status"
+                },
+                {
+                    "type": "dropdown",
+                    "label": "Available From",
+                    "fieldName": "available_from",
+                    "data": [
+                        {
+                            "values": ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                            "fieldName": "available_from_month"
+                        },
+                        {
+                            "values": ["2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031"],
+                            "fieldName": "available_from_year"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "label": "Build Year",
+                    "fieldName": "build_year",
+                    "data": [
+                        {
+                            "values": ["2005", "2006", "2007", "2008", "2009", "2010","2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020","2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031"],
+                            "fieldName": "build_year"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "section": "Price Details",
+            "section_id": "price",
+            "fields": [
+                {
+                    "type": "textfield",
+                    "data": [
+                        {
+                            "label": "Expected Price",
+                            "placeholder": "Enter Total Price",
+                            "fieldName": "expected_price"
+                        },
+                        {
+                            "placeholder": "",
+                            "label": "Price Per Sq-ft:",
+                            "fieldName": "expected_price_per_sq_ft"
+                        }
+                    ]
+                },
+                {
+                    "type": "textfield",
+                    "label": "Other Charges",
+                    "fieldName": "other_charges"
+                },
+                {
+                    "type": "checkbox",
+                    "label": "Stamp Duty & Registration Charges excluded.",
+                    "fieldName": "stamp_duty_registration_charges_excluded"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Booking/Token Amount",
+                    "fieldName": "booking_token_amount"
+                },
+                {
+                    "type": "text-dropdown",
+                    "data": [
+                        {
+                            "type": "textfield",
+                            "label": "Maintenance Charges",
+                            "placeholder": "Maintenance Charges",
+                            "fieldName": "maintenance_charges"
+                        },
+                        {
+                            "type": "dropdown",
+                            "label": "Per",
+                            "values": ["Monthly", "Quarterly", "Yearly", "One-Time", "Per Sq. Unit Monthly"],
+                            "fieldName": "maintenance_charges_per"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "label": "Brokerage (Brokers only)",
+                    "values": ["0", "0.25", "0.5", "0.75", "1", "1.5", "2", "3", "4", "5"],
+                    "fieldName": "brokerage"
+                }
+                
+            ]
+        }
+    ]
+}

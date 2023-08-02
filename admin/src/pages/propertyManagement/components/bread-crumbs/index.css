@@ -1,0 +1,10 @@
+.breadcurmb{
+    background-color: #e8e8e8;
+    margin :20px 0px 35px 0;
+}
+.breadcurmb .typo{
+    padding: 3px;
+}
+.breadcurmb .typo .icon{
+    padding-top: 4px;
+}

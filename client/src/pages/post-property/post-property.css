@@ -1,0 +1,26 @@
+.quill{
+    min-height:40vh;
+    display: flex;
+    flex-direction: column;    
+}
+.ql-container{
+    flex: 1;
+}
+.RemoveBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dzu-dropzone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.dzu-previewContainer{
+    flex-basis: 50%;
+}
+.dzu-previewImage{
+    height: 120px;
+}

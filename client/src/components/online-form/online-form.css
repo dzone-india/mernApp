@@ -1,0 +1,143 @@
+.client-bgform {
+  width: 100%;
+  background: #00afb8;
+  /* margin-bottom: 7rem; */
+  padding-top: 7rem;
+}
+.onlineFormControl {
+  justify-content: center;
+}
+
+.onlineFormControl .FormControl {
+  /* background: #fff; */
+  background: #00afb8;
+  width: 100%;
+  border-radius: 4px;
+}
+.onlineFormControl .FormControl .SelectBox {
+  margin: 0;
+  padding: 11px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.onlineFormControl .FormControl .SelectBox option {
+  color: #00afb8;
+}
+.FormControl .BoxTitle {
+  padding-left: 20px;
+}
+.TextfildGrid {
+  width: 100%;
+}
+.TextfildGrid .OutForm .InnerForm {
+  width: 100%;
+  background: #00afb8;
+  /* background: #fff; */
+  border-radius: 4px;
+}
+.OutForm input {
+  background: #00afb8;
+  color: #fff;
+  border: none;
+  /* border-bottom:1px solid #fff; */
+  min-width: 17rem;
+}
+.WholeCont {
+  background: #00afb8;
+  padding: 30px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.OutformP .formP {
+  color: #fff;
+  line-height: 45px;
+  display: inline;
+}
+.OutformP .formP input {
+  width: 50%;
+  max-width: 93px;
+  outline: none;
+  background: #00afb8;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  /* min-width:17rem; */
+}
+.OutformP .formP .checkBox {
+  width: 100%;
+  max-width: 14px;
+}
+.OutformP .BookButton {
+  margin-top: 20px;
+  background: #ef8822;
+  color: #fff;
+  padding: 14px 19px;
+  border-radius: 5px;
+}
+.onlineFormControl .FormControl {
+  border-bottom: 1px solid #fff;
+}
+.MuiInputBase-root:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.OutformP .BookButton:disabled {
+  background-color: #aeb2b3;
+  color: rgb(17, 16, 16);
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 5px 20px;
+  text-align: right;
+}
+.ParentBookButton {
+  text-align: center;
+}
+.WholeCont .FormHeader span {
+  color: #fff;
+}
+.FormHeader .FormHeaderH1 {
+  color: #333333;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.FormHeader .FormHeaderSpan {
+  color: #06aeb8;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    min-width: 17rem;
+  }
+  .bannerContainer .bannerh3 {
+    background: #00afb8;
+  }
+  .MuiContainer-root {
+    width: 90%;
+  }
+  .onlineFormHeader {
+    height: 510px;
+  }
+  .bannerContainer {
+    left: 0% !important;
+  }
+  .OutformP .formP .checkBox {
+    /* width: 100%; */
+    width: 10px;
+    max-width: 14px;
+  }
+
+  .MuiTypography-root.section-title.MuiTypography-h2 {
+    margin-top: 10px !important;
+  }
+  .MuiTypography-root.section-subtitle.MuiTypography-body1 {
+    color: #fff;
+  }
+  .bannerContainer .bannerh2 {
+    /* color: #00afb8 !important; */
+  }
+}

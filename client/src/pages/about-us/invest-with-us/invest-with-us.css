@@ -1,0 +1,65 @@
+.box-text label {
+    border-radius: 4px;
+    padding: 0.2em 0.6em;
+    border: 1px solid #009ce2;
+    background-color: #00acff;
+    color: #fff;
+    font-size: 0.8em;    
+  }
+  .box-text input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .box-text p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+  
+  .box-text input:focus ~ label {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+  
+  .box-text input:checked + p {
+    -webkit-line-clamp: unset;
+  }
+  
+  /* .box-text input:checked ~ label,
+  .box-text p:not(.truncated) ~ label{
+    display: none;
+  } */
+  .box-text p {
+    margin: 0;
+    /* color:cornsilk */
+  }
+
+  .box-text {
+    /* background-color: rgb(240, 219, 219); */
+    box-shadow: 2px 1px 30px #246756;
+    padding: 2em;
+    border-radius: 5px;
+    /* width: 80%;
+    max-width: 250px; */
+    min-width: 150px;
+  }
+  .about-page-image::before{
+    background-color: rgba(0, 0, 0, 0.37);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  /* .about-page-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
+    line-height: 1.5;
+  } */
+
+  

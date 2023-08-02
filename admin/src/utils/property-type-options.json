@@ -1,0 +1,35 @@
+[
+  {
+    "property_for_id": 1,
+    "property_type": "Sell",
+    "items": [
+      {
+        "id": 0,
+        "name": "RESIDENTIAL",
+        "value": ""
+      },
+     
+      {
+        "id": 0,
+        "name": "COMMERCIAL",
+        "value": ""
+      }     
+    ]
+  },
+  {
+    "property_for_id": 2,
+    "propertyType": "Rent",
+    "items": [
+      {
+        "id": 0,
+        "name": "RESIDENTIAL",
+        "value": ""
+      },
+      {
+        "id": 0,
+        "name": "COMMERCIAL",
+        "value": ""
+      }
+    ]
+  }
+]

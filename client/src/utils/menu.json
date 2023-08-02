@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "title": "Home",
+        "href": "/"
+    },
+    {
+        "id": 2,
+        "title": "About Us",
+        "submenu": [
+            {
+                "title": "About The Company",
+                "href":"/about-us"
+            },
+            {
+                "title": "About The Directors",
+                "href":"/about-directors"
+            },
+            {
+                "title": "Invest With Us",
+                "href":"/invest-with-us"
+            },
+            {
+                "title": "Construction Process",
+                "href":"/construction-process"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Property",
+        "submenu": [
+            {
+                "id": 1,
+                "title": "Sell",
+                "href": "/search-property-details?type=Sell"
+            },
+            {
+                "id": 2,
+                "title": "Rent",
+                "href": "/search-property-details?type=Rent"
+            }
+        ]
+    },
+   
+    {
+        "id": 5,
+        "title": "Services",
+        "image": "",
+        "submenu": [ ]
+    },
+    {
+        "id": 6,
+        "title": "Careers",
+        "href": "/carrer"
+    },
+    {
+        "id": 7,
+        "title": "Finance",
+        "href": "/finance"
+    },
+    {
+        "id": 8,
+        "title": "Contact Us",
+        "href": "/contact-us"
+    },
+    {
+        "id": 9,
+        "title": "Blog",
+        "href": "/blog"
+    }
+]
+

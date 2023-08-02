@@ -1,0 +1,41 @@
+.MenuManagement_Data {
+  padding: 0px 15px;
+  /* border: 1px solid #cdcdcd; */
+}
+.card-header {
+  padding: 15px 15px;
+}
+.addUserFormanage {
+  border: 1px solid #337ab7;
+  background-color: #fff;
+  padding: 0px;
+}
+.FormFildes {
+  padding: 0px 15px;
+}
+.addUserFormanage .SaveData {
+  background-color: #44b6ae;
+  border-radius: 0px;
+  padding: 8px 22px;
+  margin-right: 10px;
+}
+.addUserFormanage .CanceForm {
+  background-color: #bbbaba;
+  padding: 8px 22px;
+  border-radius: 0px;
+}
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px 0 20px 20px;
+}
+.PhoneInput {
+  margin-top: 20px;
+}
+.PhoneInput input {
+  display: none;
+}
+
+.react-confirm-alert-overlay {
+  position: absolute;
+  z-index: 9999;
+}

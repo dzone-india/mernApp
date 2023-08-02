@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "href": "/home",
+        "title": "DASHBOARD"
+    },
+    {
+        "id": 2,
+        "href": "/property-management",
+        "title": "PROPERTY MANAGEMENT",
+        "items": [
+            {
+                "id": 21,
+                "href": "/add-property",
+                "title": "ADD NEW"
+            },
+            {
+                "id": 22,
+                "href": "/property-list",
+                "title": "LIST"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "href": "/account",
+        "title": "ACCOUNT"
+    }
+]

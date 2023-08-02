@@ -1,0 +1,8 @@
+.headline {
+  font-size: 180px !important;
+  font-weight: 900;
+}
+.text-warning,
+.text-yellow {
+  color: #566456;
+}

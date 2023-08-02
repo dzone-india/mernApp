@@ -1,0 +1,87 @@
+.middel-content h2{
+    font-size: 36px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.headingtext{
+    text-align: center;
+}
+.middel-content p{
+    color: #333333;
+    margin: 30px 0 0;
+    font-size: 20px;
+    padding: 0 12%;
+    display: inline-block;
+}
+.job-list{
+    margin: 0 0 40px;
+    width: 100%;
+    margin-top:20px
+}
+
+.job_inner{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 35px #cecece;
+    margin: 0 0 20px;
+}
+.job_inner h3{
+    font-size: 20px;
+    color: #00afb8;
+    font-weight: bold;
+}
+.job-detail{
+    float: left;
+    margin: 0 20px 0 0;
+    font-size: 16px;
+    color: #757575;
+    margin-top: 8px;
+    text-align: left;
+}
+.ParentButton{
+    text-align: right;
+}
+.ParentButton button{
+    background-color: #00afb8;
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 5px 20px;
+    text-align: right;
+}
+.ParentButton button:disabled{
+    background-color: #aeb2b3;
+    color: rgb(17, 16, 16);
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 5px 20px;
+    text-align: right;
+}
+.workSpaceImgaes img{
+    width: 100%;
+}
+.CareerPageText{
+    background-color: #56568e;
+    opacity: 1;
+    background-image: radial-gradient(#f9c293 1px, #fff 1px);
+    background-size: 20px 20px;
+    margin: 3rem 0px;
+}
+.work-space h2{
+    font-size: 36px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 2rem;
+}

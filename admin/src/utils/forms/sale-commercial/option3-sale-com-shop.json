@@ -1,0 +1,220 @@
+{
+    "property_for_id": 1,
+    "property_category": "Sell",
+    "selected_property_type_id": 3,
+    "sections": [
+        {
+            "section": "Property Features",
+            "section_id": "features",
+            "fields": [
+                {
+                    "type": "option",
+                    "label": "Floor No.",
+                    "initial_counts": ["Lower Basement","Upper Basement","Ground",1,2,3,4,5,"5+"],
+                    "more_counts": [6,7,8,9,10, 11,12],
+                    "showMore": true,
+                    "fieldName": "floor_no"
+                },
+                {
+                    "type": "option",
+                    "label": "Total Floors",
+                    "initial_counts": [1,2,3,4,5,6,7,8,9,10,11,12,13,"13+"],
+                    "more_counts": [14,15,16,17,18,19,20],
+                    "showMore": true,
+                    "fieldName": "total_floors"
+                },
+                {
+                    "type": "option",
+                    "label": "Furnished Status",
+                    "initial_counts": ["Furnished", "Unfrnised", "Semi-Furnished"],
+                    "showMore": false,
+                    "fieldName": "furnished_status"
+                },
+                {
+                    "type": "radio",
+                    "label": "Corner Shop",
+                    "values": [{"label": "Yes", "value": "yes"}, {"label": "No", "value": "no"}],
+                    "fieldName": "corner_shop"
+                },
+                {
+                    "type": "radio",
+                    "label": "Is Main Road Facing",
+                    "values": [{"label": "Yes", "value": "yes"}, {"label": "No", "value": "no"}],
+                    "fieldName": "is_main_road_facing"
+                },
+                {
+                    "type": "radio",
+                    "label": "Personal Washroom",
+                    "values": [{"label": "Yes", "value": "yes"}, {"label": "No", "value": "no"}],
+                    "fieldName": "personal_washroom"
+                },
+                {
+                    "type": "radio",
+                    "label": "Pantry/Cafeteria",
+                    "values": [{"label": "Dry", "value": "dry"}, {"label": "Wet", "value": "wet"}, {"label": "Not Available", "value": "not available"}],
+                    "fieldName": "pantry_cafeteria"
+                }
+            ]
+        },
+        {
+            "section": "Area",
+            "section_id": "area",
+            "fields": [
+                {
+                    "type": "textfield",
+                    "label": "Covered Area",
+                    "placeholder": "Super Area",
+                    "defalut_unit": "Sq-ft",
+                    "units": ["Sq-Yrd", "Sq-m", "Acre", "Bigha", "Hectare", "Marla", "Kanal", "Biswa1", "Biswa2", "Ground", "Aankadam", "Rood", "Chatak", "Kottah", "Cent"],
+                    "fieldName": "covered_area"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Plot Area",
+                    "placeholder": "Built-up Area",
+                    "defalut_unit": "Sq-ft",
+                    "units": ["Sq-Yrd", "Sq-m", "Acre", "Bigha", "Hectare", "Marla", "Kanal", "Biswa1", "Biswa2", "Ground", "Aankadam", "Rood", "Chatak", "Kottah", "Cent"],
+                    "fieldName": "plot_area"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Carpet Area",
+                    "placeholder": "Carpet Area",
+                    "defalut_unit": "Sq-ft",
+                    "units": ["Sq-Yrd", "Sq-m", "Acre", "Bigha", "Hectare", "Marla", "Kanal", "Biswa1", "Biswa2", "Ground", "Aankadam", "Rood", "Chatak", "Kottah", "Cent"],
+                    "fieldName": "carpet_area"
+                }
+            ]
+        },
+        {
+            "section": "Transaction Type, Property Availability",
+            "section_id": "transaction",
+            "fields": [
+                {
+                    "label": "Transaction Type",
+                    "type": "radio",
+                    "values": ["New Property", "ReSell"],
+                    "fieldName": "transaction_type"
+                },
+                {
+                    "label": "Possession Status",
+                    "type": "radio",
+                    "values": ["Under Construction", "Ready to move"],
+                    "fieldName": "possession_status"
+                },
+                {
+                    "type": "dropdown",
+                    "label": "Available From",
+                    "data": [
+                        {
+                            "values": ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                            "fieldName": "available_from_month"
+                        },
+                        {
+                            "values": ["2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031"],
+                            "fieldName": "available_from_year"
+                        }
+                    ]
+                },
+                {
+                    "label": "Currently Leased out",
+                    "type": "radio",
+                    "values": ["Yes", "No"],
+                    "fieldName": "currently_leased_out"
+                },
+                {
+                    "label": "Assured Returns",
+                    "type": "radio",
+                    "values": ["Yes", "No"],
+                    "fieldName": "assured_retruns"
+                }
+            ]
+        },
+        {
+            "section": "Price Details",
+            "section_id": "price",
+            "fields": [
+                {
+                    "type": "textfield",
+                    "data": [
+                        {
+                            "label": "Expected Price",
+                            "placeholder": "Enter Total Price",
+                            "fieldName": "expected_price"
+                        },
+                        {
+                            "placeholder": "",
+                            "label": "Price Per Sq-ft:",
+                            "fieldName": "expected_price_per_sq_ft"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "label": "Price Includes",
+                    "fields": [
+                        {
+                            "label": "PLC",
+                            "value": "plc",
+                            "fieldName": "price_includes_plc"
+                        },
+                        {
+                            "label": "Car Parking",
+                            "value": "car parking",
+                            "fieldName": "price_includes_car_parking"
+                        }
+                    ]
+                },
+                {
+                    "type": "textfield",
+                    "label": "Other Charges",
+                    "fieldName": "other_charges"
+                },
+                {
+                    "type": "checkbox",
+                    "label": "Stamp Duty & Registration Charges excluded.",
+                    "fieldName": "stamp_duty_registration_charges_excluded"
+                },
+                {
+                    "type": "textfield",
+                    "label": "Booking/Token Amount",
+                    "fieldName": "booking_token_amount"
+                },
+                {
+                    "type": "text-dropdown",
+                    "data": [
+                        {
+                            "type": "textfield",
+                            "label": "Maintenance Charges",
+                            "placeholder": "Maintenance Charges",
+                            "fieldName": "maintenance_charges"
+                        },
+                        {
+                            "type": "dropdown",
+                            "label": "Per",
+                            "values": ["Monthly", "Quarterly", "Yearly", "One-Time", "Per Sq. Unit Monthly"],
+                            "fieldName": "maintenance_charges_per"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "label": "Brokerage (Brokers only)",
+                    "values": ["Select Brokerage", "No Brokerage", "0.25%", "0.5%", "0.75%", "1%", "1.5%", "2%", "3%", "4%", "5%"],
+                    "fieldName": "brokerage"
+                },
+                {
+                    "type": "checkbox",
+                    "label": "Response from brokers",
+                    "fields": [
+                        {
+                            "label": "I am not interested in getting response from brokers",
+                            "value": "I am not interested in getting response from brokers",
+                            "fieldName": "response_from_brokers"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

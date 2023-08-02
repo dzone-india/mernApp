@@ -1,0 +1,85 @@
+.EnquryForm2 .enquryButton, .EnquryForm2 .enquryButton:hover{
+    position: fixed;
+    right: 0px;
+    background: #00afb8;
+    font-size: 24px;
+    color: #fff;
+    bottom: 170px;
+    z-index: 1;
+    min-width: auto;
+    padding: 7px 8px;
+    border: none;
+    z-index: 100;
+}
+#ServicesEnquiryForm .MuiBackdrop-root{
+    display: none!important;
+}
+
+#ServicesEnquiryForm .MuiDialog-container div:nth-child(1){
+    background: #00afb8;
+    color: #fff;
+}
+#ServicesEnquiryForm .divider{
+    border-color: #fff;
+}
+
+#ServicesEnquiryForm .ParentButton button{
+    background-color: #ef8822;
+    color: #fff;
+    margin: 0rem 1rem 2rem;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+#ServicesEnquiryForm .ParentButton button:hover{
+    background-color: #ef8822;
+    color: #fff;
+}  
+#ServicesEnquiryForm .EmiInputs{
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 2rem;
+}     
+
+#customized-dialog-title{
+    color: seashell;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#customized-dialog-title button{
+    top: 0px;
+    right: 0px;
+    border-radius: 0px;
+    background-color: #ef8822;
+    color: #fff;
+}
+
+#ServicesEnquiryForm .selectInput select{
+    margin-top: 1rem;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 4px;
+    color: #fff;
+}
+#ServicesEnquiryForm .selectInput select option{
+    color: #000;
+}
+#ServicesEnquiryForm .MuiInput-underline:before, #ServicesEnquiryForm .MuiInput-underline:hover, #ServicesEnquiryForm .MuiInput-underline:active{
+    content: '';
+    border-bottom:0px;
+    position: relative;
+}
+
+
+#ServicesEnquiryForm{
+    background-color: #03b2cb;
+    padding:20px;
+}
+#ServicesEnquiryForm .ParentButton button:disabled{
+    background-color: #aeb2b3;
+    color: rgb(17, 16, 16);
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 5px 20px;
+    text-align: right;
+}

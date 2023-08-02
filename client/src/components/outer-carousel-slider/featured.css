@@ -1,0 +1,138 @@
+.property-section .tab-content > .MuiBox-root {
+	padding-top: 45px;
+}
+.property-item{
+    position: relative;
+	text-decoration: none;
+}
+.property-carousel > .slick-list {
+    margin: 0 -9px;
+}
+.property-carousel > .slick-list > .slick-track > .slick-slide {
+    padding: 0 10px;
+}
+.slick-prev.slick-arrow, .slick-next.slick-arrow {
+	position: absolute;
+	top: -35px;
+	transform: none;
+	width: 25px;
+	height: 30px;
+}
+.slick-prev.slick-arrow {
+	left: auto;
+	right: 35px;
+}
+.slick-next.slick-arrow  {
+	right: 0;
+}
+.property-wrap{
+    background-color: #fff;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+.property-image{
+    position: relative;	
+}
+.property-image img{
+    width: 100%;	
+	height: 200px;
+	object-fit: cover;
+}
+.featured {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    z-index: 1;
+    background-color: #ff3d77;
+    line-height: 1.1;
+    height: 25px;
+    width: fit-content;
+}
+.featured:before {
+    border-color: transparent;
+    border-left-color: transparent!important;
+    left: -12px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0px solid #ff3d77;
+    border-width: 12.5px 11px;    
+}
+.property-summery{
+    position: relative;
+    padding: 15px 0 0
+}
+.property-tag {
+	color: #ef8822;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	min-height: 20px;
+	display: block;
+}
+.property-summery .property-title{    
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.2em;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.property-information {
+	margin: 0 -5px 5px;
+}
+.property-information .property-feature {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	padding: 0 5px;
+}
+.property-feature svg {
+	fill: #ef8822;
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+.property-feature p {
+	font-size: 14px;
+	font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+	color: #333333;
+}
+.property-button {
+	flex-wrap: nowrap;
+}
+.property-button .btn {
+	position: relative;
+	display: block;
+	width: 50%;
+	border-radius: 0;
+}
+@media only screen and (max-width: 767px) {
+	.property-section .tab-content > .MuiBox-root {
+		padding-top: 30px;
+	}
+	.property-tag {		
+		font-size: 13px;	
+	}
+	.property-summery .property-title {
+		font-size: 15px;		
+		margin-bottom: 10px;
+	}
+	.property-information .property-feature{
+		margin-bottom: 7px;
+	}
+	.property-feature p {
+		font-size: 13px;		
+	}
+	.btn {	
+		padding: 7px 15px;		
+	}
+} 

@@ -1,0 +1,407 @@
+@token= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRlIjoiMjAyMS0wOC0yM1QxNjowMjoxOS4xNDdaIiwiZW1haWwiOiJ2aWtyYW0uZHpvbmVAZ21haWwuY29tIiwiaWF0IjoxNjI5NzM0NTM5fQ._bhWsua50FmDqUARgbNqfBt6O9ppeIQ2lS-7CTn-49k
+@requestToken= Bearer eyJhbGciOiJIUzI1NiJ9.VmlrcmFtSmVldFNpbmdoSkk.MaACpq-fK6F02rVz3vEAUgAYvTqDAEVKpq9zNbmWCPs
+@serverIp = http://192.46.214.45:3333/api/
+@authToken= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRlIjoiMjAyMS0wNy0yMlQxMDo1NToyNC44MzRaIiwiZW1haWwiOiJ2aWtyYW0uZHpvbmVAZ21haWwuY29tIiwiaWF0IjoxNjI2OTUxMzI0fQ.cFslmLZWKPF9PIW-hMv5VuJJ6YDg-FByMxZPjcKIroE
+@ip = http://localhost:3333/api/
+
+
+############## Term and condition API ADMIN SIGNUP
+POST {{ip}}users/signup HTTP/1.1
+Content-type: application/json
+
+{
+   "firstName": "Akshay",
+   "lastName": "Jain",
+   "email": "coolakshayjain@gmail.com",
+   "password": "123456",
+   "mobile": 1234567870,
+   "countryCode":91,
+   "userRole":"60cdfef4065fd802c4478671"
+}
+
+############## Term and condition API ADMIN login
+POST {{ip}}users/login HTTP/1.1
+Content-type: application/json
+
+{
+   "email": "coolakshayjain@gmail.com",
+   "password": "123456"
+}
+
+
+
+###################################################### MENU ###########################################
+
+############ getMenuList ########
+
+POST {{ip}}menuModule/getMenuList HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "userRole":["test1"]
+}
+
+###################################################### CREATE ROLE ###########################################
+
+############ craeteUserRole ########
+
+POST {{ip}}role/createUserRole HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "id": null,
+   "name": "testUser",
+   "rights": ["60cd51d29929671c8cbe390c", "60cd50f49929671c8cbe3908"],
+   "status": true,
+   "createdBy": "60cdd398285f20226c9345c8",
+   "updatedBy": "60cdd398285f20226c9345c8"
+}
+
+############ updateUserRole ########
+
+POST {{ip}}role/updateStatusUserRole HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "id": "60cdfef4065fd802c4478671",
+   "status": false,
+   "updatedBy": "60cd51d29929671c8cbe390c"
+}
+
+############ userRoleList ########
+
+POST {{ip}}role/userRoleList HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+############ userRoleList ########
+
+POST {{ip}}role/userRoleDataList HTTP/1.1
+Content-type: application/json
+Authorization: {{authToken}}
+
+
+################# createCallback ################
+
+POST {{ip}}callback/createCallbackRequest HTTP/1.1
+Content-type: application/json
+
+{
+   "propertyId": "60d7dc32d31ee41430c4fac8",
+   "name": "Akshay jain",
+   "email": "akshay@gmail.com",
+   "phone": "0123456789",
+   "message": "test demo",
+   "isVisit": true
+}
+
+################# getCallback ################
+
+POST {{ip}}callback/getCallbackRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{authToken}}
+
+
+################# updateCallbackStatus ################
+
+POST {{ip}}callback/updateCallbackStatusRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{authToken}}
+
+{
+   "id": "60f96409a4f9380a98eab954",
+   "status": false
+}
+
+################# createEnquiry #################
+
+POST {{ip}}enquiry/createEnquiryRequest HTTP/1.1
+Content-type: application/json
+
+{
+   "name": "Akshay jain",
+   "email": "akshay@gmail.com",
+   "phone": "0123456789",
+   "place": "Bangalore"
+}
+
+################# getEnquiry ################
+
+POST {{ip}}enquiry/getEnquiryRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+
+################# updateEnquiryStatus ################
+
+POST {{ip}}enquiry/updateEnquiryStatusRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "id": "60d68cbbefcf390848f994fa",
+   "status": false
+}
+
+
+################# createreview ################
+
+POST {{ip}}review/createReviewRequest HTTP/1.1
+Content-type: application/json
+
+{
+   "propertyId": "60d7dc32d31ee41430c4fac8",
+   "name": "Akshay jain",
+   "email": "akshayq@gmail.com",
+   "comment": "test demo",
+   "rating": "5"
+}
+
+################# getReview ################
+
+POST {{ip}}review/getReviewRequest HTTP/1.1
+Content-type: application/json
+
+################# updateReviewStatus ################
+
+POST {{ip}}review/updateReviewStatusRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{authToken}}
+
+{
+   "id": "60d7171f51113a1998714a8c",
+   "status": false
+}
+
+################# createproperty ################
+
+POST {{ip}}property/createPropertyRequest HTTP/1.1
+Content-type: application/json
+
+{
+   "iAm": "Owner",
+   "for": "Rent",
+   "pType":"Flat/Apartment",
+   "postingAs":"",
+   "pCity":"Bangalore",
+   "nameOfProject":"New Project",
+   "bedrooms": 2,
+   "balconies": 2,
+   "floorNo": 2,
+   "totalFloors": 2,
+   "furnishedStatus": "Furnished",
+   "bathrooms":2,
+   "superArea":0,
+   "builtUpArea":1200,
+   "carpetArea":1050,
+   "transactionType": "Under Construction",
+   "possessionStatus":"",
+   "availableFromMonth":"12",
+   "availableFromYear":"2021",
+   "ageOfConstruction":""
+}
+
+################# getProperty ################
+
+POST {{ip}}property/getPropertyRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+################# getUserIdPropertyRequest ################
+
+POST {{ip}}property/getUserIdPropertyRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "userId": "60cdd398285f20226c9345c8"
+}
+################# propertyDetail ################
+
+POST {{ip}}property/propertyDetail HTTP/1.1
+Content-type: application/json
+Authorization: {{requestToken}}
+
+{
+    "propertyId":"611a296df7df552ad49faa65"
+}
+
+################# getUserIdPropertyRequest ################
+
+POST {{ip}}property/getSearchPropertyList HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "type": "Rent",
+   "keyword":"Bangalore",
+   "pType":"Flat/Apartment"
+}
+
+################# getUserIdPropertyRequest ################
+
+POST {{ip}}property/getAllProperty HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "type": "Rent",
+   "keyword":"Bangalore",
+   "pType":"Flat/Apartment"
+}
+
+################# updatePropertyStatus ################
+
+POST {{ip}}property/updatePropertyStatusRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "id": "60d7dc32d31ee41430c4fac8",
+   "status": true
+}
+
+
+################# createfeedback ################
+
+POST {{ip}}feedback/createFeedbackRequest HTTP/1.1
+Content-type: application/json
+
+{
+   "name": "TEST",
+   "rating":"5",
+   "message":"demo test",
+   "propertyId": "60d7dc32d31ee41430c4fac8"
+}
+
+################# getFeedback ################
+
+POST {{ip}}feedback/getFeedbackRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+
+################# updateFeedbackStatus ################
+
+POST {{ip}}feedback/updateFeedbackStatusRequest HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "id": "60d7dc32d31ee41430c4fac8",
+   "status": true
+}
+
+########################## CMS #########################################
+
+POST {{ip}}cms/createCMS HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "position": "Footer",
+   "pageName": "Shipping",
+   "type": "Is this page",
+   "pageTitle": "Shipping Policyq",
+   "pageUrl": null,
+   "metaKeywords": "Shipping Policy",
+   "metaTitle": "Shipping Policy",
+   "metaDescription": "Shipping Policy",
+   "pageSortDescription": null,
+   "pageDescription": null,
+   "iconImage": null
+}
+
+#### 
+POST {{ip}}cms/getCMSList HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+##### 
+POST {{ip}}cms/updateCMS HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "id":"60dd1d346c09c301a8b67692",
+   "position": "Footer1",
+   "pageName": "Shipping",
+   "type": "Is this page",
+   "pageTitle": "Shipping Policyq",
+   "pageUrl": null,
+   "metaKeywords": "Shipping Policy",
+   "metaTitle": "Shipping Policy",
+   "metaDescription": "Shipping Policy",
+   "pageSortDescription": null,
+   "pageDescription": null,
+   "iconImage": null
+}
+###
+
+POST {{ip}}cms/updateCMSStatus HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "id": "60dd1d346c09c301a8b67692",
+   "isDisable":true
+}
+#####################
+
+POST {{ip}}home/createMovingBanner HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "years": 21,
+   "clients": 1300,
+   "projects": 50,
+   "shortDescription": "Rajasthan Largest and most awarded real estate Company"
+}
+
+#########################
+
+POST {{ip}}home/createAboutSection HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "title": "WE'VE BEEN CREATING AWESOME SINCE 1994",
+   "header": "ABOUT VISHAL CONSTRUCTION COMPANY ",
+   "description": "At Vishal Construction Company, we always think ahead but our focus remains unerringly on delighting our customers and stakeholders. Functioning through an array of best-of-class practices and utilizing leading technologies, we at Vishal Construction Company believe either in staying ahead of the wave or riding it. If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+   "metaTitle": "Rajasthan Largest and most awarded real estate Company",
+   "metaKeywords": "Rajasthan Largest and most awarded real estate Company",
+   "metaDescription": "Rajasthan Largest and most awarded real estate Company"
+}
+#####################
+
+POST {{ip}}home/updateMovingBanner HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "_id":"61224a0a9f2d877121a6cc71",
+   "years": 21,
+   "clients": 1300,
+   "projects": 50,
+   "shortDescription": "Rajasthan Largest and most awarded real estate Company"
+}
+
+#########################
+
+POST {{serverIp}}home/updateAboutSection HTTP/1.1
+Content-type: application/json
+Authorization: {{token}}
+
+{
+   "_id": "61214eab72a2fe1d141e35ca",
+   "title": "WE'VE BEEN CREATING AWESOME SINCE 1994",
+   "header": "ABOUT VISHAL CONSTRUCTION COMPANY ",
+   "description": "At Vishal Construction Company, we always think ahead but our focus remains unerringly on delighting our customers and stakeholders. Functioning through an array of best-of-class practices and utilizing leading technologies, we at Vishal Construction Company believe either in staying ahead of the wave or riding it. If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+   "metaTitle": "Rajasthan Largest and most awarded real estate Company",
+   "metaKeywords": "Rajasthan Largest and most awarded real estate Company",
+   "metaDescription": "Rajasthan Largest and most awarded real estate Company"
+}

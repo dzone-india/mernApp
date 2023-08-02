@@ -1,0 +1,10 @@
+{
+  "dbcredentials": {
+    "user": "dzoneindiajp",
+    "password": "yVeiaUeEvymMnM9g",
+    "database": "vishal",
+    "address": "localhost",
+    "host": "localhost",
+    "port": 27017
+  }
+}

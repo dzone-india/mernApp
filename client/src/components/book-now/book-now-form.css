@@ -1,0 +1,72 @@
+.client-bgform {
+  width: 100%;
+  background: #fff;
+  /* margin-bottom: 7rem; */
+  margin-top: 120px;
+  justify-content: center;
+}
+.onlineFormControl .FormControl {
+  background: #fff;
+  width: 100%;
+  border-radius: 4px;
+}
+.onlineFormControl .FormControl .SelectBox {
+  margin: 0;
+  padding: 11px;
+}
+.FormControl .BoxTitle {
+  padding-left: 20px;
+}
+.TextfildGrid {
+  width: 100%;
+}
+.TextfildGrid .OutForm .InnerForm {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+}
+.WholeCont {
+  background: #00afb8;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.OutformP .formP {
+  color: #fff;
+  line-height: 45px;
+}
+.OutformP .formP input {
+  width: 100%;
+  max-width: 93px;
+  border: none;
+}
+.OutformP .formP .checkBox {
+  width: 100%;
+  max-width: 14px;
+}
+.OutformP .BookButton {
+  margin-top: 20px;
+  background: #ef8822;
+  color: #fff;
+  padding: 14px 19px;
+  border-radius: 5px;
+}
+.ParentBookButton {
+  text-align: center;
+}
+.WholeCont .FormHeader span {
+  color: #fff;
+}
+.FormHeader .FormHeaderH1 {
+  color: #333333;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.FormHeader .FormHeaderSpan {
+  color: #06aeb8;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}

@@ -1,0 +1,17 @@
+.BlogPage{
+    background-color: #56568e;
+    opacity: 1;
+    background-image: radial-gradient(#f9c293 1px, #fff 1px);
+    background-size: 20px 20px;
+    padding: 3rem 0px;
+}
+.BlogPage .CardSection{
+    padding-top: 3rem;
+}
+.Heading{
+    font-size: 20px;
+}
+.BlogCrad .ParentButton{
+    text-align: left;
+    margin-top: 1.5rem;
+}

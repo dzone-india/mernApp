@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+  width: 25px;
+  height: 30px;
+}
+.slick-prev.slick-arrow {
+  left: 0;
+}
+.slick-next.slick-arrow {
+  right: 0;
+}
+.slick-prev.slick-arrow::before,
+.slick-next.slick-arrow::before {
+  content: "\e941";
+  line-height: 1;
+  opacity: 1;
+  color: #ef8822;
+  font-size: 30px;
+  font-family: "Material Icons";
+  font-weight: normal;
+  display: block;
+}
+.slick-prev.slick-arrow::before {
+  transform: rotate(180deg);
+}
+.slick-prev.slick-disabled::before,
+.slick-next.slick-disabled::before {
+  opacity: 0.5;
+}
+.content-wrapper {
+  padding: 30px 0;
+}
+.page-section-header {
+  margin-bottom: 40px;
+}
+.page-section-title {
+  color: #00afb8;
+  text-transform: uppercase;
+}
+h2.page-section-title {
+  font-size: 28px;
+}
+h3.page-section-title {
+  font-size: 24px;
+}
+h4.page-section-title {
+  font-size: 20px;
+}
+.d-block {
+  display: block;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.btn,
+.MuiButton-root.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 9px 15px;
+  line-height: 24px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-primary,
+.MuiButton-root.btn-primary {
+  background-color: #ef8822;
+  border-color: #ef8822;
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.MuiButton-root.btn-primary:hover,
+.MuiButton-root.btn-primary:focus {
+  background-color: #00afb8;
+  border-color: #00afb8;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #333333;
+  border-color: #333333;
+  color: #fff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #676767;
+  border-color: #676767;
+  color: #fff;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.MuiInput-underline:after {
+  border-bottom: none !important;
+}
+.starts-from {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+}
+@media (min-width: 480px) {
+  .starts-from {
+    flex-direction: row;
+    /* background-color: blue; */
+  }
+}

@@ -1,0 +1,30 @@
+.team-wrap {
+	background-color: #f4f4f4;
+    box-shadow: none;
+	padding: 20px;	
+}
+.team-image {
+    background-color: #fff;
+	border-radius: 100%;
+	width: 120px;
+	height: 120px;	
+	margin: 0 auto 20px;
+}
+.team-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.team-summery {
+	padding: 0;
+	text-align: center;
+}
+.team-name {
+	font-size: 18px;
+	color: #007b5e;
+	margin-bottom: 10px;
+}
+.team-content {
+	color: #777;
+	font-size: 14px;
+}

@@ -1,0 +1,39 @@
+/* =============== Owl Dots ============== */
+.owl-carousel.owl-theme .owl-dots .owl-dot span {
+	width: 30px;
+	height: 3px;
+	margin: 5px 3px;
+	background: #869791;
+	display: block;
+	border-radius: 0;
+}
+.owl-carousel.owl-theme .owl-dots .owl-dot.active span, .owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+	background-color: #D6D6D6;   
+}
+/* ============== Owl Nav ============== */
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {	
+	background-color: transparent;
+    font-size: 0;
+    margin: 0 0 0 10px
+}
+.owl-carousel.owl-theme .owl-nav [class*="owl-"]:hover {
+	background-color: transparent;
+	color: #ef8822;	
+}
+.owl-carousel .owl-nav button::before {
+	content: "\e941";
+	color: #ef8822;
+	font-size: 30px;
+	font-family: 'Material Icons';
+	font-weight: normal;
+	display: block;
+}
+.owl-carousel .owl-nav button.owl-prev::before {
+	transform: rotate(180deg);
+}
+.property-section .owl-nav {
+	position: absolute;
+	top: -35px;
+	right: 0;
+	margin: 0;
+}

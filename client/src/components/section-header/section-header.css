@@ -1,0 +1,69 @@
+.section-header {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0;
+  margin-top: 30vh;
+}
+.section-header::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #00b0b8;
+  content: "";
+}
+.section-header::after {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 75%;
+  width: 2px;
+  background-color: #00b0b8;
+  content: "";
+}
+.section-header .section-subtitle {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  display: block;
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #00b0b8;
+  font-weight: 700;
+  top: -2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  letter-spacing: 0;
+}
+.section-header .section-title {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  display: block;
+  font-size: 30px;
+  line-height: 1.2em;
+  color: #333333;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+@media only screen and (max-width: 991px) {
+  .section-header .section-title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-header {
+    padding-left: 25px;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+  .section-header .section-subtitle {
+    font-size: 14px;
+    line-height: 1em;
+    top: -1px;
+  }
+  .section-header .section-title {
+    font-size: 20px;
+  }
+}
